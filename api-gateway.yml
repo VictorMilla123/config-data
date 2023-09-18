@@ -16,12 +16,4 @@ spring:
         - id: micro01
           uri: lb://MICRO01
           predicates:
-            - Path=/afiliado/**
-        - id: micro02
-          uri: lb://MICRO02
-          predicates:
-            - Path=/afp/**
-        - id: micro03
-          uri: http://localhost:8087/
-          predicates:
-            - Path=/poliza/**
+            - Path=/exchangerate/**
