@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhostvictor
+    hostname: localhost
 
 eureka:
   client:
