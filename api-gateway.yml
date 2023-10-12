@@ -11,13 +11,10 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: true
+          enabled: true   #indica que la puerta de enlace habilita la función de registro y descubrimiento de servicios
       routes:
         - id: micro01
           uri: http://localhost:8085/
           predicates:
-            - Path=/micro01Mant/**
-        - id: micro02
-          uri: http://localhost:8086/
-          predicates:
-            - Path=/micro02Process/**
+            - Path=/WebFluxConvertAmount/**
+	    - Path=/WebFluxExchangeRate/**
