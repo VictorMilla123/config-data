@@ -17,11 +17,11 @@ spring:
         locator:
           enabled: true   #indica que la puerta de enlace habilita la función de registro y descubrimiento de servicios
       routes:
-        - id: micro01ApiWebFlux
+        - id: micro01
           uri: http://localhost:8085/
           predicates:
             - Path=/WebFluxConvertAmount/**
-        - id: micro01ApiWebFlux
+        - id: micro01
           uri: http://localhost:8085/
           predicates:
             - Path=/WebFluxExchangeRate/**
