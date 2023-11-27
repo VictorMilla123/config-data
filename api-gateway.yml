@@ -20,8 +20,4 @@ spring:
         - id: micro01
           uri: http://localhost:8085/
           predicates:
-            - Path=/WebFluxConvertAmount/**
-        - id: micro01
-          uri: http://localhost:8085/
-          predicates:
-            - Path=/WebFluxExchangeRate/**
+            - Path=/api/**
