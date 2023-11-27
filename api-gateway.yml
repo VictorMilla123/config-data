@@ -1,9 +1,14 @@
 server:
   port: 8088
 
+spring:
+  application:
+    name: api-gateway
+    
 eureka:
   instance:
     prefer-ip-address: true
+    instance-id: ${spring.application.name}:${random.vvid}
   client:
     fetch-registry: true
     register-with-eureka: true
@@ -12,6 +17,9 @@ eureka:
 
 spring:
   cloud:
+    loadbalancer:
+      ribbon:
+        enaled: false
     gateway:
       discovery:
         locator:
