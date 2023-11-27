@@ -8,7 +8,7 @@ spring:
 eureka:
   instance:
     prefer-ip-address: true
-    instance-id: ${spring.application.name}:${random.vvid}
+    instance-id: ${spring.application.name}:${random.uuid}
   client:
     fetch-registry: true
     register-with-eureka: true
